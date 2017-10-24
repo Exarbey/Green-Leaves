@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+*{margin: 0;padding: 0;box-sizing:border-box;}
+body{
+  display: flex;
+  display:-webkit-flex;
+  justify-content:center;
+  align-items:center; 
+  background:#1c3643 -webkit-linear-gradient(top,#1e5271 0%,#1c3643 100%);
+  background-repeat:no-repeat;
+  font:14px "Microsoft YaHei",Arial;
+}
+input.ng-valid.ng-touched{
+  border:2px solid green;
+}
+input.ng-invalid.ng-touched {
+  border:2px solid #FF453D;
+ }
+.container{
+  background:#fff;
+  width: 510px;
+  min-height:404px;
+  border-radius:5px;
+  box-shadow:0 2px 20px #4c596c;
+  border-bottom:2px solid #ddd;
+  position:relative; 
+  overflow:hidden;
+}
+form,form+div{
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition:all 0.2s linear;
+} 
+.inside{
+  transform:translateX(0);
+  opacity:1;
+}
+.outsidel{
+  transform:translateX(-100%);
+  opacity:0;
+}
+.outsider{
+  transform:translateX(100%);
+ opacity:0;
+}
+h1{
+  background:#64DD17;
+  color:#ffffff;
+  width: 75%;
+  text-align:center;
+  margin-top: 3%;
+  font-weight:normal;
+  padding:20px 0;
+  border-radius:10px;
+  margin-left: 12.5%;
+  box-shadow:1px 1px 0 1px #dddddd;
+}
+td{padding: 5px;}
+input,label{display: inline-block;vertical-align: middle;}
+table{
+  border:0;
+  margin:20px auto;
+  width:90%;
+}
+input+label{margin:0 15px 0 3px}
+input:focus{outline:none; border-color: #BBDEFB;}
+input{
+  border:1px solid #e9e9e9;height:30px;
+  padding:5px;
+  border-radius:5px;
+  box-shadow:1px 1px 0 1px #f4f4f4;
+  border: solid 1px #ccc;  
+}
+input[type="submit"]{
+  background:-webkit-linear-gradient(top,#1ab188 0%,#1ab188 100%);
+  color:#fff;
+  text-align:center;
+  cursor:pointer;
+  
+}
+.resultInfo{width:85%; margin:50px auto;} 
+.fav{display: none;}
+.att {
+  padding: 1rem;
+  text-align: right;
+}
+.green{color:#00C853;font-size:12px;margin-left: 5px;}
+
